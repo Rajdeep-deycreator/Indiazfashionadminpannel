@@ -5,7 +5,7 @@ fs.collection("orders").onSnapshot((snap)=>{
   snap.forEach((oc)=>{
     const da=oc.data();
     var nd=document.createElement("div")
-    nd.innerHTML="customer-name:"+da.cosname+"<br>address:"+da.cosadd+'<br>ph no:'+da.cosph+'<br>product art.no.:'+da.prart+'<br>price:'+da.prpr+'<br>'+da.prti+'<br>id:'+da.cosi
+    nd.innerHTML="customer-name:"+da.cosname+"<br>address:"+da.cosadd+'<br>postal code:'+da.postl+'<br>ph no:'+da.cosph+'<br>product art.no.:'+da.prart+'<br>price:'+da.prpr+'<br>'+da.prti+'<br>id:'+da.cosi
     var im=document.createElement('img');
     im.setAttribute('src',da.prlk)
     im.style.width="100%";
